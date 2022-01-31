@@ -3,7 +3,7 @@ description: >-
   G4l1l30 write-up on the easy-difficulty Linux machine Delivery from
   https://hackthebox.eu
 title: Hack the Box - Delivery Writeup
-date: 2021-05-22 15:40:00 -0600
+date: 2021-05-21 15:40:00 -0600
 author: RobertEncarnacion
 tag: 
 - htb
