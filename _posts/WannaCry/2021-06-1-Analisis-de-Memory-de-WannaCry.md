@@ -7,6 +7,10 @@ categories: [Malware Analysis]
 tags: [Volatility, WannaCry, MemoryDump]     # TAG names should always be lowercase
 show_image_post: true
 image: /_posts/WannaCry/ransomware-wannacry.jpg
+layout: post
+category: blog
+author: RobertEncarnacion
+
 ---
 # Analisis de Memory de WannaCry | Parte I
 
