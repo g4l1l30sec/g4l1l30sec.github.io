@@ -5,10 +5,28 @@ description: >-
 title: Hack the Box - Breadcrumb Writeup
 date: 2021-07-17 10:40:00 -0600
 categories: [Hack the Box, Writeup]
-tags: [htb, hacking, hack the box, redteam, Windows,LFI,bypass file upload, sqlmap dump, port fordwarding, sqli, sqlmap, analyse binary,sqlite leak, jwt token, phpssesid ]     # TAG names should always be lowercase
+tags: 
+- htb
+- hacking
+- hack the box
+- redteam
+- Windows
+- LFI
+- bypass 
+- file upload
+- sqlmap dump
+- port fordwarding
+- sqli
+- sqlmap
+- analyse binary
+- sqlite leak
+- jwt token
+- phpssesid     # TAG names should always be lowercase
 show_image_post: true
 image: (/assets/img/Linux/Breadcrumbs/InfoCard-Breadcrumbs.png
-
+layout: post
+category: blog
+author: RobertEncarnacion
 
 
 ---
