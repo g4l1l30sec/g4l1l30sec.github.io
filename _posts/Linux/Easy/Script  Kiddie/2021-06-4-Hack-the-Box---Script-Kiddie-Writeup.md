@@ -5,9 +5,22 @@ description: >-
 title: Hack the Box - Script Kiddie Writeup
 date: 2021-06-5 10:40:00 -0600
 categories: [Hack the Box, Writeup]
-tags: [htb, hacking, hack the box, redteam, Linux, msfvenom, nmap, pivoting, msfconsole ]     # TAG names should always be lowercase
+tags: 
+- htb
+- hacking
+- hack the box
+- redteam
+- Linux
+- msfvenom
+- nmap
+- pivoting
+- msfconsole     # TAG names should always be lowercase
 show_image_post: true
 image: /assets/img/Linux/ScriptKiddie/InfoCard-ScriptKiddie.png
+layout: post
+category: blog
+author: RobertEncarnacion
+
 ---
 
 # Summary
