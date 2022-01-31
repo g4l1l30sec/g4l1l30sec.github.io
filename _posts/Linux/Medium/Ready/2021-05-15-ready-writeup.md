@@ -8,6 +8,10 @@ categories: [Hack the Box, Writeup]
 tags: [htb, hacking, hack the box, redteam, Linux, medium, writeup, gitlab RCE, gitlab 11.4.7, docker privileged]     # TAG names should always be lowercase
 show_image_post: true
 image: /assets/img/Ready/InfoCard.png
+layout: post
+category: blog
+author: RobertEncarnacion
+
 ---
 
 # Summary
