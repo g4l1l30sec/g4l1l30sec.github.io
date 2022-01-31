@@ -8,6 +8,10 @@ categories: [Hack the Box, Writeup]
 tags: [htb, hacking, hack the box, redteam, Linux, php backup, php deserialization, deserialization, shell scripting ]     # TAG names should always be lowercase
 show_image_post: true
 image: /assets/img/Linux/Tenet/InfoCard-ScriptKiddie.png
+layout: post
+category: blog
+author: RobertEncarnacion
+
 ---
 
 
