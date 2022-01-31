@@ -3,7 +3,7 @@ description: >-
   G4l1l30 write-up on the easy-difficulty Linux machine Delivery from
   https://hackthebox.eu
 title: Hack the Box - Delivery Writeup
-date: 2021-05-22 15:40:00 -0600
+date: 2021-05-21 15:40:00 -0600
 categories: [Hack the Box, Writeup]
 tags: [htb, hacking, hack the box, redteam, Linux,hashcat,hashcat rules, Password Reuse, Account misconfiguration, bash, Web]     # TAG names should always be lowercase
 show_image_post: true
