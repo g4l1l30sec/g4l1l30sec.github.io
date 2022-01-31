@@ -11,7 +11,7 @@ image: /assets/img/Linux/delivery/InfoCard-Delivery.png
 ---
 
 
-[TOC]
+
 
 # Summary
 
