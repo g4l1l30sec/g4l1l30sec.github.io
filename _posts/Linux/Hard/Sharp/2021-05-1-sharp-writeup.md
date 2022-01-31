@@ -8,6 +8,9 @@ categories: [Hack the Box, Writeup]
 tags: [htb, hacking, hack the box, redteam, windows,ysoserial, hard, writeup, kanban, dnsspy, remoting_service, smb, wcf, smbget, smbmap, smbmapexec]     # TAG names should always be lowercase
 show_image_post: true
 image: /assets/img/Linux/Sharp/01-Sharp-infocard.png
+layout: post
+category: blog
+author: RobertEncarnacion
 ---
 
 ## HTB - Sharp
