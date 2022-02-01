@@ -6,7 +6,8 @@ layout: page
 
  - I'm in love with Tolkien's Middle Earth (I'm a proud Tolkiendil), also I'm a Otaku too(Manga and animes It's part of my life ), moreover I'm a wannabe Hacker! 
 - I like the Capture The Flag, so...I'm a CTF player at <a href="https://www.hackthebox.eu/profile/321601" target="_blank" rel="noopener">Hack The Box</a> and <a href="https://tryhackme.com/p/G4l1l30" target="_blank" rel="noopener">TryHackMe</a>
-- I'm a member of RedTeamRD and a proud member of 0xPicaPollo Team.
-- I work in a Cybersecurity Threat Intelligence (CTI) and as an Incident Responder, typical Blue Team guy.
+- I'm a member of RedTeamRD community and a proud member of 0xPicaPollo Team.
+- I work in a Cybersecurity Threat Intelligence (CTI) Team and as an Incident Responder, typical Blue Team guy.
+- I like play Dungeon and Dragon.
 
 “I was talking aloud to myself. A habit of the old: they choose the wisest person present to speak to.” Olórin
