@@ -2,7 +2,7 @@
 description: >-
   G4l1l30 write-up on the easy-difficulty Linux machine Horizontall from
   https://hackthebox.eu
-title: Hack the Box - Delivery Writeup
+title: Hack the Box - Horizontall Writeup
 date: 2022-02-04 00:40:00 -0600
 author: RobertEncarnacion
 tag: 
