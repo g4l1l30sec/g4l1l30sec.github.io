@@ -3,6 +3,6 @@ title: Projects
 layout: page
 ---
 
-![Jujutsu](/assets/images/Jujutsu.JPG)
+![Jujutsu](/assets/images/ups.JPG)
 
-~Ugh, esto es relleno ~
+~ Ugh, esto es relleno por el momento ~
