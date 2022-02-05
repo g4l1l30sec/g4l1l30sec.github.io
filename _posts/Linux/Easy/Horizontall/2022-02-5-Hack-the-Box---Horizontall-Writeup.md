@@ -240,7 +240,7 @@ Bien, ahora estamos listo para hacer el Portforward, dejo dos articulos interesa
 
 [Chisel Port Forward](https://www.sevenlayers.com/index.php/332-chisel-port-forward)
 
-[Tunneling with Chisel and SSF | 0xdf hacks stuff](https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html)
+[Tunneling with Chisel and SSF ](https://0xdf.gitlab.io/2020/08/10/tunneling-with-chisel-and-ssf-update.html)
 
 En nuestra maquina dejamos a Chisel en escucha de la siguiente forma:
 
