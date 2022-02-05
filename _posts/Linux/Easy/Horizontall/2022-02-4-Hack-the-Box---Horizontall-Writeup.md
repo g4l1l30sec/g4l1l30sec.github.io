@@ -27,6 +27,8 @@ category: blog
 ---
 # Summary
 
+![](/assets/img/Linux/Horizontall/card.png)
+
 ## Info de la maquina
 
 | VM column  | Detalles     |
