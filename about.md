@@ -9,7 +9,6 @@ layout: page
 - I'm a member of RedTeamRD community and a proud member of 0xPicaPollo Team.
 - I work in a Cybersecurity Threat Intelligence (CTI) Team and as an Incident Responder, typical Blue Team guy.
 - I like play Dungeon and Dragon.
-- I've a beautiful Waifu in real life.
 - Wannabe Hacker.
 
 “I was talking aloud to myself. A habit of the old: they choose the wisest person present to speak to.” Olórin
