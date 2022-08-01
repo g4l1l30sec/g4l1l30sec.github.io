@@ -57,7 +57,7 @@ Una vez que se hayan completado las actividades de reconocimiento, el adversario
 
 
 
-•**Email con attachments** malicioso o web pages(watering holes) a traves de (spear) phising. Ver  [How the biggest cyber heist in history was foiled | NordVPN](https://nordvpn.com/blog/the-lazarus-heist/)
+•**Email con attachments** malicioso o web pages(watering holes) a traves de (spear) phising. Ver + [How the biggest cyber heist in history was foiled | NordVPN](https://nordvpn.com/blog/the-lazarus-heist/)
 
 •**Abusando de una falla en el perimetro externo** (a nivel aplicativo o infraestructura).  Ver [Eternal Blue](https://www.loginradius.com/blog/engineering/eternal-blue-retrospective/)
 
@@ -71,13 +71,17 @@ Con base en diferentes publicaciones de los últimos años, podemos echar un vis
 
 
 
-1. 82% de los data breach, son cometidos por el factor Humano, en el cual se incluye Social Attacks. [2022 Data Breach Investigations Report | Verizon](https://www.verizon.com/business/resources/reports/dbir/)
+1. 82% de los data breach, son cometidos por el factor Humano, en el cual se incluye Social Attacks 
+   [2022 Data Breach Investigations Report | Verizon](https://www.verizon.com/business/resources/reports/dbir/)
 
-2. 66% Alrededor de dos tercios de las infracciones involucraron phishing, credenciales robadas y/o ransomware. [2022 Data Breach Investigations Report | Verizon](https://www.verizon.com/business/resources/reports/dbir/)
+2. 66% Alrededor de dos tercios de las infracciones involucraron phishing, credenciales robadas y/o ransomware
+   [2022 Data Breach Investigations Report | Verizon](https://www.verizon.com/business/resources/reports/dbir/)
 
-3. Es probable que casi el 20% de todos los empleados hagan clic en enlaces de correo electrónico de phishing. [Gone Phishing Tournament Report 2020 | Terranova Security](https://terranovasecurity.com/2020-gpt-report/?utm_campaign=En_GPTReport2020&utm_medium=Google&utm_source=Ads&utm_content=NewAd3&gclid=CjwKCAjw6fCCBhBNEiwAem5SO8oIgjFVtVzMA5pg-uSkRAho6S356pspA4bY3FBFk9FXCKW0Ksq-ExoCsHEQAvD_BwE)
+3. Es probable que casi el 20% de todos los empleados hagan clic en enlaces de correo electrónico de phishing. 
+[Gone Phishing Tournament Report 2020 | Terranova Security](https://terranovasecurity.com/2020-gpt-report/?utm_campaign=En_GPTReport2020&utm_medium=Google&utm_source=Ads&utm_content=NewAd3&gclid=CjwKCAjw6fCCBhBNEiwAem5SO8oIgjFVtVzMA5pg-uSkRAho6S356pspA4bY3FBFk9FXCKW0Ksq-ExoCsHEQAvD_BwE)
 
-4. Un Informe de amenazas reciente de ESET encontró que, en el tercer trimestre de 2020, los tipos más comunes de archivos maliciosos adjuntos a los correos electrónicos de phishing fueron los siguientes: Windows executables (74%) , Script files (11%), Office documents (5%).  https://www.welivesecurity.com/wp-content/uploads/2020/10/ESET_Threat_Report_Q32020.pdf
+4. Un Informe de amenazas reciente de ESET encontró que, en el tercer trimestre de 2020, los tipos más comunes de archivos maliciosos adjuntos a los correos electrónicos de phishing fueron los siguientes: Windows executables (74%) , Script files (11%), Office documents (5%)
+[ESET Threat Report 2020](https://www.welivesecurity.com/wp-content/uploads/2020/10/ESET_Threat_Report_Q32020.pdf)
 
 
 
@@ -144,7 +148,7 @@ En resumidas cuentas, podemos decir que :
 
 ## <center>Paletas de colores para ejercicios de Phishing.</center>
 
-<img title="" src="https://images.getdunmag.com/posts/475/image-7609d3.JPG" alt="Women and Fly Fishing Through the Ages: A More Complete Picture Emerges ~  DUN Magazine" width="292" data-align="center">
+<center><img title="" src="https://images.getdunmag.com/posts/475/image-7609d3.JPG" alt="Women and Fly Fishing Through the Ages: A More Complete Picture Emerges ~  DUN Magazine" width="292" data-align="center"></center>
 
 Hoy dia, poco ha cambiado entre las soluciones a la hora de implementar controles, tenemos herramientas Opensource y comerciales, estas ultimas a veces rodeadas de un Halo de misterio debido a la no entrega de un trial, pero no entraremos en detalles.
 
@@ -289,7 +293,7 @@ El truco aqui recae en los record guardados, esto le permite a FENRIR entender q
 
 ## <center>Resumen NAC y MDM(un poco de 802.IX)</center>
 
-<img title="" src="https://cdn.dopl3r.com//media/memes_files/que-se-repita-chica-diciendo-felizmente-wHrVK.jpg" alt="Que se repita, chica diciendo felizmente plantilla-" width="324" data-align="center">
+<img title="" src="https://user-images.githubusercontent.com/70044502/182218993-05f63f92-f368-4a6f-94af-7ae97b6d39d7.png" alt="Rosalia" width="324" data-align="center">
 
 
 
