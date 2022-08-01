@@ -30,7 +30,7 @@ author: RobertEncarnacion
 
 
 
-<img src="https://sensorstechforum.com/wp-content/uploads/2020/03/CVE-2020-0796-smbghost-vulnerability-sensorstechforum.jpg" title="" alt="CVE-2020-0796: Ahora me ves, Now You Don't" data-align="center">
+<center><img src="https://sensorstechforum.com/wp-content/uploads/2020/03/CVE-2020-0796-smbghost-vulnerability-sensorstechforum.jpg" title="" alt="CVE-2020-0796: Ahora me ves, Now You Don't" data-align="center"></center>
 
 En esencia, los protocolos mas viejos no fueron concebidos para ser seguros,**HTTP** no fue concebido para ser seguro, en **FTP** solo importa transferir archivos, Telnet solo desea que te conectes al servidor, **DNS** a solo le importa que encuentres a tu vecino en un gran directorio de llamadas, asi podemos enumerar unos cuantos mas, pero sin duda alguna, un protocolo que ha sido una maldicion o bendicion para los ambientes Windows es **NT Lan Manager** AKA NTLM. 
 
@@ -72,7 +72,7 @@ De la siguiente forma funciona NTLM autenticacion :
 
 
 
-<img title="" src="http://3.bp.blogspot.com/-IieWjCCfBFc/Ve0g4I8n6nI/AAAAAAAAANk/0m8XiWAYCqg/s400/IC50098.gif" alt="RANDIKA'S TECH BLAST: How NTLM authentication works?" data-align="center" width="608">
+<center><img title="" src="http://3.bp.blogspot.com/-IieWjCCfBFc/Ve0g4I8n6nI/AAAAAAAAANk/0m8XiWAYCqg/s400/IC50098.gif" alt="RANDIKA'S TECH BLAST: How NTLM authentication works?" data-align="center" width="608"></center>
 
 
 
@@ -92,7 +92,7 @@ Asi que, NTLM es susceptible a un ataque llamado MiTM o Man in the Middle, que n
 
 
 
-![NTLM Relay](https://en.hackndo.com/assets/uploads/2020/03/ntlm_relay_basic.png)
+<center>![NTLM Relay](https://en.hackndo.com/assets/uploads/2020/03/ntlm_relay_basic.png)</center>
 
 
 
@@ -104,7 +104,7 @@ En este proceso de Negotiate - Challenge - Authenticate, hay una serie de inform
 
 
 
-<img title="" src="https://en.hackndo.com/assets/uploads/2020/03/ntlm_relay_example_smb_smb_no_signing_pcap_response_2.png" alt="Relai NTLM - Response" width="702">
+<center><img title="" src="https://en.hackndo.com/assets/uploads/2020/03/ntlm_relay_example_smb_smb_no_signing_pcap_response_2.png" alt="Relai NTLM - Response" width="702"></center>
 
 
 
@@ -138,7 +138,7 @@ Pero el problema radica en que esta informacion puede hacer un "relay" entre var
 
 
 
-![](C:\Users\robencarnacion\AppData\Roaming\marktext\images\2022-08-01-15-09-33-image.png)
+<center>![](C:\Users\robencarnacion\AppData\Roaming\marktext\images\2022-08-01-15-09-33-image.png)</center>
 
 
 
@@ -192,7 +192,7 @@ https://www.ultimatewindowssecurity.com/wiki/page.aspx?spid=MSNSalways
 
 
 
-<img src="https://areajugones.sport.es/wp-content/uploads/2019/02/Obsidian-Vault-Boy.jpg" title="" alt="Fallout contará con una figura Nendoroid de su Vault Boy" data-align="center">
+<center><img src="https://areajugones.sport.es/wp-content/uploads/2019/02/Obsidian-Vault-Boy.jpg" title="" alt="Fallout contará con una figura Nendoroid de su Vault Boy" data-align="center"></center>
 
 
 
