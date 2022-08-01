@@ -14,7 +14,7 @@ image: /assets/img/Linux/ScriptKiddie/InfoCard-ScriptKiddie.png
 layout: post
 category: blog
 author: RobertEncarnacion
-
+---
 
 
 # <center>Frustrando al Actor Malicioso</center>
