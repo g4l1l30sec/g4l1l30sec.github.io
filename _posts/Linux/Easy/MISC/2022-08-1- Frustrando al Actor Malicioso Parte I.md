@@ -2,7 +2,7 @@
 description: >-
   G4l1l30
 title: Frustrando al Actor Malicioso - Parte I
-date: 2021-06-5 10:40:00 -0600
+date: 2022-08-1 10:40:00 -0600
 categories: [MISC]
 tags: 
 - PurpleTeam
