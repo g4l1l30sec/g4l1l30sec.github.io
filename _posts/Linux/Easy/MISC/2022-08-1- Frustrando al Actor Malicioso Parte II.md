@@ -76,9 +76,9 @@ De la siguiente forma funciona NTLM autenticacion :
 
 
 
-Es muy sencillo, de entender, el problema radica en que, quien valida el Challenge es el DC, y en este paso, es donde una atacante se aprovecha, pues si el recurso que el cliente solicita no se encuentra, en el proceso llamado "Negotiate", el DC en primer instancia negocia por la autenticacion de Kerberos pero este, al no encontrar el Service Principal Name [Service Principal Names - Win32 apps | Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/ad/service-principal-names) , procede a hacer un Downgrade a NTLM!
+Es muy sencillo, de entender, el problema radica en que, quien valida el Challenge es el DC, y en este paso, es donde una atacante se aprovecha, pues si el recurso que el cliente solicita no se encuentra, en el proceso llamado "Negotiate", el DC en primer instancia negocia por la autenticacion de Kerberos pero este, al no encontrar el Service Principal Name , procede a hacer un Downgrade a NTLM!
 
-
++Info sobre SPN : [Service Principal Names - Win32 apps | Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/ad/service-principal-names)
 
 No es el servidor a donde se solicita el recurso quien hace el downgrade de protocolo, es el mismo DC quien lo hace, ven el problema?  Este radica, en que la devuelta (paso 5) , un atacante puede interceptar los paquetes y hacer un especie de "relay" entre Servidor - Cliente, ya que al final, quien valida es el DC, no el servidor.
 
@@ -232,14 +232,15 @@ En nuestro **Group Policy Editor** tenemos : `Computer Configuration\Policies\Wi
 
 
 
-En el que tenemos las siguientes politicas
+En el que tenemos las siguientes politicas:
 
+```
 | Setting                                                                   | Value                            |
 | ------------------------------------------------------------------------- | -------------------------------- |
 | Network security: Restrict NTLM: Audit Incoming NTLM Traffic              | Enable auditing for all accounts |
 | Network security: Restrict NTLM: Audit NTLM authentication in this domain | Enable all                       |
 | Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers  | Audit all                        |
-
+```
 
 
 *Audit NTLM authentication in this domain* debe ser aplicada al Domain Controller, las otras dos a todos los sistemas. Podemos auditar los logs en  `Applications And Services Logs\Microsoft\Windows\NTLM\Operational`
@@ -252,11 +253,14 @@ Por otro lado podemos bloquear NTLM de la siguiente forma :
 
 En nuestro **Group Policy Editor** tenemos : `Computer Configuration\Policies\Windows Settings\Security Settings\Local Policies\Security Options`
 
+```
+
 | Setting                                                                  | Value             |
 | ------------------------------------------------------------------------ | ----------------- |
 | Network security: Restrict NTLM: Incoming NTLM traffic                   | Deny all accounts |
 | Network security: Restrict NTLM: NTLM authentication in this domain      | Deny all          |
 | Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers | Deny all          |
+```
 
 La politica `*NTLM authentication in this domain*  es aplicada al Domain Controller, las otras dos a todo los sistemas.
 
