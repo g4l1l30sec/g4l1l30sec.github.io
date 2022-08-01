@@ -20,7 +20,7 @@ author: RobertEncarnacion
 
 # <center>Frustrando al Actor Malicioso - Parte II</center>
 
-### 
+
 
 ### <center>Payload Delivery and Execution desde una perspectiva Blue Team </center>
 
