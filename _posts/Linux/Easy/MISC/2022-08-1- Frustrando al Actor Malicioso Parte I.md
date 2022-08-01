@@ -293,7 +293,7 @@ El truco aqui recae en los record guardados, esto le permite a FENRIR entender q
 
 ## <center>Resumen NAC y MDM(un poco de 802.IX)</center>
 
-<img title="" src="https://user-images.githubusercontent.com/70044502/182218993-05f63f92-f368-4a6f-94af-7ae97b6d39d7.png" alt="Rosalia" width="324" data-align="center">
+<center><img title="" src="https://user-images.githubusercontent.com/70044502/182218993-05f63f92-f368-4a6f-94af-7ae97b6d39d7.png" alt="Rosalia" width="324" data-align="center"></center>
 
 
 
