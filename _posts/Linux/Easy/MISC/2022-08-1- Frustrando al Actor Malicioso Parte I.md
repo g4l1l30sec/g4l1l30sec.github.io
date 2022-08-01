@@ -49,7 +49,7 @@ Es necesario aplicar la paradoja de la Reina Roja en nuestro dia a dia, hay que 
 
 
 
-![](C:\Users\robencarnacion\AppData\Roaming\marktext\images\2022-08-01-10-38-58-image.png)
+<img title="" src="https://i.ibb.co/BNVgyPC/2022-08-01-10-38-58-image.png" alt="punch" data-align="center">
 
 
 
@@ -59,7 +59,7 @@ Una vez que se hayan completado las actividades de reconocimiento, el adversario
 
 •**Email con attachments** malicioso o web pages(watering holes) a traves de (spear) phising. Ver  [How the biggest cyber heist in history was foiled | NordVPN](https://nordvpn.com/blog/the-lazarus-heist/)
 
-•**Abusando de una falla en el perimetro externo** (a nivel aplicativo o infraestructura).  Ver https://www.loginradius.com/blog/engineering/eternal-blue-retrospective/
+•**Abusando de una falla en el perimetro externo** (a nivel aplicativo o infraestructura).  Ver [Eternal Blue](https://www.loginradius.com/blog/engineering/eternal-blue-retrospective/)
 
 **•Insertando memoria usb**(autorun o de forma automática con Rubber Ducky) infectadas(para esto, se necesita interaccion con el target) . Ver [I Had My Mom Break into a Prison. Then, We Had Pie. - YouTube](https://www.youtube.com/watch?v=yqOGuXcLdOA)
 
@@ -118,8 +118,7 @@ Este trabajo no es de un solo departamento, es toda una directiva de proteccion 
 ## <center>La importancia de la educacion del usuario final</center>
 
 
-
-<img src="file:///C:/Users/robencarnacion/AppData/Roaming/marktext/images/2022-08-01-11-41-57-image.png" title="" alt="" data-align="center">
+<img src="https://user-images.githubusercontent.com/70044502/182217203-2ce16c00-b4b2-4385-9a91-b5e61afa93ae.png" title="" alt="" data-align="center">
 
 Hay una razón por la que el usuario final suele llamarse el eslabón más débil de la seguridad . Incluso utilizando los mecanismos de defensa tecnológicos más avanzados, nuestra su organización aún puede ser violada por el error de un solo usuario.
 
@@ -172,8 +171,7 @@ Si bien este ultimo nos obliga a registrar un dominio, aqui juega un poco la int
 Si le echamos un vistazo , la "a" capital es similar a la "а" cyrilica, esto, sin embargo via correo no se distingue la diferencia, por suerte en nuestros navegadores son capaces de resolver estos nombres a lo que recae el formato "Punny Code", para el ultimo ejemplo, en nuestro navegador seria : 
 
 
-
-![](C:\Users\robencarnacion\AppData\Roaming\marktext\images\2022-08-01-11-55-44-image.png)
+<img title="" src="https://user-images.githubusercontent.com/70044502/182217831-09902bb5-9620-46b0-995d-fd8b1b56c574.png" alt="Gophish, la herramienta para entrenar usuarios contra el Phishing." width="544" data-align="center">
 
 
 
