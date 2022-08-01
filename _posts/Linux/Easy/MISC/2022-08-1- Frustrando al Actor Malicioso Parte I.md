@@ -1,3 +1,22 @@
+---
+description: >-
+  G4l1l30
+title: Frustrando al Actor Malicioso - Parte I
+date: 2021-06-5 10:40:00 -0600
+categories: [MISC]
+tags: 
+- PurpleTeam
+- BlueTeam  
+- RedTeam
+- MeetUP  # TAG names should always be lowercase
+show_image_post: true
+image: /assets/img/Linux/ScriptKiddie/InfoCard-ScriptKiddie.png
+layout: post
+category: blog
+author: RobertEncarnacion
+
+
+
 # <center>Frustrando al Actor Malicioso</center>
 
 ### <center>Payload Delivery and Execution desde una perspectiva Blue Team</center>
