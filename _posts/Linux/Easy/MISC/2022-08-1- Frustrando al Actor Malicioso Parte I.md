@@ -21,7 +21,6 @@ author: RobertEncarnacion
 
 ### <center>Payload Delivery and Execution desde una perspectiva Blue Team</center>
 
-# 
 
 # <center> Introduccion</center>
 
@@ -57,7 +56,8 @@ Una vez que se hayan completado las actividades de reconocimiento, el adversario
 
 
 
-•**Email con attachments** malicioso o web pages(watering holes) a traves de (spear) phising. Ver + [How the biggest cyber heist in history was foiled | NordVPN](https://nordvpn.com/blog/the-lazarus-heist/)
+•**Email con attachments** malicioso o web pages(watering holes) a traves de (spear) phising. Ver + 
+[How the biggest cyber heist in history was foiled | NordVPN](https://nordvpn.com/blog/the-lazarus-heist/)
 
 •**Abusando de una falla en el perimetro externo** (a nivel aplicativo o infraestructura).  Ver [Eternal Blue](https://www.loginradius.com/blog/engineering/eternal-blue-retrospective/)
 
@@ -122,7 +122,7 @@ Este trabajo no es de un solo departamento, es toda una directiva de proteccion 
 ## <center>La importancia de la educacion del usuario final</center>
 
 
-<img src="https://user-images.githubusercontent.com/70044502/182217203-2ce16c00-b4b2-4385-9a91-b5e61afa93ae.png" title="" alt="" data-align="center">
+<center><img src="https://user-images.githubusercontent.com/70044502/182217203-2ce16c00-b4b2-4385-9a91-b5e61afa93ae.png" title="" alt="" data-align="center"></center>
 
 Hay una razón por la que el usuario final suele llamarse el eslabón más débil de la seguridad . Incluso utilizando los mecanismos de defensa tecnológicos más avanzados, nuestra su organización aún puede ser violada por el error de un solo usuario.
 
