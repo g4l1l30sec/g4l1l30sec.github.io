@@ -90,9 +90,8 @@ Este problema se resuelve con Kerberos, debido a que el DC generaria un Ticket (
 
 Asi que, NTLM es susceptible a un ataque llamado MiTM o Man in the Middle, que no es mas que un atacante en el medio, interceptando paquetes de forma pasiva/activa .
 
+<center><img title="" src="https://en.hackndo.com/assets/uploads/2020/03/ntlm_relay_basic.png" alt="RANDIKA'S TECH BLAST: How NTLM authentication works?" data-align="center" width="608"></center>
 
-
-<center>![NTLM Relay](https://en.hackndo.com/assets/uploads/2020/03/ntlm_relay_basic.png)</center>
 
 
 
