@@ -12,7 +12,7 @@ external-image: false
 picture: assets/images/profile.jpg
 
 # your site color theme, false to light theme
-dark-theme: false
+dark-theme: true
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -39,21 +39,16 @@ twitter: G4l1l302
 #instagram: myinstagram
 linkedin: robert-encarnación0x
 github: g4l1l30sec
-email: galileosec@g4l1l30.com
+email: nsa@g4l1l30.com
 
 authors:
   johndoe:
-    name: Robert Encarnación
+    name: Nobody
     bio: Wannabe Hacker
     external-image: false
     picture: assets/images/profile.png
     twitter: G4l1l302
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
-    external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
+
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
